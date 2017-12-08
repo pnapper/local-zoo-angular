@@ -12,12 +12,13 @@ import { Animal } from './animal.model';
     <hr>
       <ul>
         <li (click)="hideDetails(currentAnimal)">
-        <h3><strong>Species: {{currentAnimal.species}}</strong></h3>
+        <h3><strong>{{currentAnimal.species}}</strong></h3>
         <h3><strong>Name: {{currentAnimal.name}}</strong></h3><br>  <div>Age: {{currentAnimal.age}}</div><br>
         <div>Diet: {{currentAnimal.diet}}</div><br>
         <div>Location: {{currentAnimal.location}}</div><br>  <div>Caretakers: {{currentAnimal.caretakers}}</div><br>
         <div>Sex: {{currentAnimal.sex}}</div><br>
         <div>Likes: {{currentAnimal.likes}}</div><br>  <div>Dislikes: {{currentAnimal.dislikes}}</div><br>
+        <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
         </li><br><br>
       </ul>
     </div>
