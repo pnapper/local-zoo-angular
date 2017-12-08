@@ -13,7 +13,7 @@ import { Animal } from './animal.model';
       <ul>
         <li (click)="hideDetails(currentAnimal)">
         <h3><strong>Species: {{currentAnimal.species}}</strong></h3>
-        <h3><strong>Name: {{currentAnimal.name}}</strong></div><br>  <div>Age: {{currentAnimal.age}}</div><br>
+        <h3><strong>Name: {{currentAnimal.name}}</strong></h3><br>  <div>Age: {{currentAnimal.age}}</div><br>
         <div>Diet: {{currentAnimal.diet}}</div><br>
         <div>Location: {{currentAnimal.location}}</div><br>  <div>Caretakers: {{currentAnimal.caretakers}}</div><br>
         <div>Sex: {{currentAnimal.sex}}</div><br>
@@ -37,5 +37,9 @@ export class AnimalListComponent {
 
   hideDetails(clickedAnimal) {
   this.currentAnimal = null;
+  }
+
+  editButtonHasBeenClicked(animalToEdit: Animal) {
+  this.clickSender.emit(animalToEdit);
   }
 }

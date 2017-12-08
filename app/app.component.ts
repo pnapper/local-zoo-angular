@@ -8,6 +8,8 @@ import { Animal } from './animal.model';
     <h1>Local Zoo - Animal List for {{month}}/{{day}}/{{year}}</h1>
     <h3>{{currentFocus}}</h3>
     <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+    <hr>
+    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
   </div>
   `
 })
@@ -27,4 +29,12 @@ export class AppComponent {
 
     new Animal('Northwest Black Tailed Deer', 'Tinkerbell', 8, 'Herbivore', 'Northern Trail', 5, 'Female', 'Delicate roots and leaves', 'Loud noises')
   ];
+
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
+  }
 }
