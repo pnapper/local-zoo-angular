@@ -48,10 +48,25 @@ This App tracks animals at the local Zoo.
  Sample Input: click on Arctic Fox.
  Sample Output: Edit form appears.
 
+ ## Ambitions
+
+ * 1. Extend the functionality of the app by building out the animal model to further enhance the app.
+
+  Examples: Add Feeding Times, Health Status, Mating Status.
+
+ * 2. Display of the total number of caretakers needed in a day.
+
+ * 3. Add a property that records when each animal was admitted. The user could enter a date and time, or the app can generate a timestamp.
+
+ * 4. Expand the application to differentiate between animals' species. Group the animals into those categories. Then include a component to display the total needed caretakers for whichever species the user selects.
+
+ * 5. Add a new master component to average the total age for each species.
+
+ * 6. Show animals based on diet type. Then, show all animals who eat meat (carnivores AND omnivores)
 
 ## Getting Started
 
-1. Clone the project from https://github.com/pnapper/local-zoo onto your local machine.
+1. Clone the project from https://github.com/pnapper/local-zoo-angular onto your local machine.
 
 2. Navigate to the project folder in the console and run "npm install" and "bower install".
 
