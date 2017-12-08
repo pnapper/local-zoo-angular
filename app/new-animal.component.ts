@@ -26,14 +26,25 @@ import { Animal } from './animal.model';
      </div>
      <div>
        <label>Enter Animal Caretakers:</label>
-       <input #newCaretakers>
+       <select #newCaretakers>
+         <option value="1"> 1 </option>
+         <option value="2"> 2 </option>
+         <option value="3"> 3 </option>
+         <option value="4"> 4 </option>
+         <option value="5"> 5 </option>
+         <option value="6"> 6 </option>
+         <option value="7"> 7 </option>
+         <option value="8"> 8 </option>
+         <option value="9"> 9 </option>
+         <option value="10"> 10 </option>
+       </select>
      </div>
      <div>
      <label>Choose Animal Sex:</label>
-     <select #newSex>
-     <option value="Male"> Male </option>
-     <option value="Female"> Female </option>
-     </select>
+       <select #newSex>
+         <option value="Male"> Male </option>
+         <option value="Female"> Female </option>
+       </select>
      </div>
      <div>
        <label>Enter Animal Likes:</label>

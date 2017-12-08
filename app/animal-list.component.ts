@@ -16,7 +16,7 @@ import { Animal } from './animal.model';
     <hr>
       <ul>
         <li (click)="hideDetails(currentAnimal)">
-        <h3><strong>{{currentAnimal.species}}</strong></h3>
+        <h2><strong>{{currentAnimal.species}}</strong></h2>
         <h3><strong>Name: {{currentAnimal.name}}</strong></h3><br>  <div>Age: {{currentAnimal.age}}</div><br>
         <div>Diet: {{currentAnimal.diet}}</div><br>
         <div>Location: {{currentAnimal.location}}</div><br>  <div>Caretakers: {{currentAnimal.caretakers}}</div><br>
